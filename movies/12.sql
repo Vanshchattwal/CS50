@@ -1,0 +1,1 @@
+select title from movies join stars on movies.id = stars.movie_id join people on stars.person_id = people.id where name = 'Bradley Cooper' intersect select title from movies join stars on movies.id = stars.movie_id join people on stars.person_id = people.id where name = 'Jennifer Lawrence';
